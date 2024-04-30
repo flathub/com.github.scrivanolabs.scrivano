@@ -1,0 +1,16 @@
+diff --git a/com.github.scrivanolabs.scrivano.appdata.xml b/com.github.scrivanolabs.scrivano.appdata.xml
+index 9942666..707909c 100644
+--- a/com.github.scrivanolabs.scrivano.appdata.xml
++++ b/com.github.scrivanolabs.scrivano.appdata.xml
+@@ -18,10 +18,10 @@
+ 
+   <categories>
+     <category>Education</category>
+-    <category>Productivity</category>
+   </categories>
+ 
+   <keywords>
++    <keyword>productivity</keyword>
+     <keyword>notes</keyword>
+     <keyword>notetaking</keyword>
+     <keyword>handwriting</keyword>

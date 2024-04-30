@@ -29,3 +29,5 @@ modules:
     - type: archive
       url: https://github.com/scrivanolabs/ScrivanoFlatpak/releases/download/0.18.14/Scrivano_flatpak_files_0.18.14.tar.gz
       sha256: 862267cbae74763ebc1e29a08ec3b254090fae1ab89063a3d866b068a2a98fb8
+    - type: patch
+      path: patches/fix_categories.patch
