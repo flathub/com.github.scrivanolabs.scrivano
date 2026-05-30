@@ -23,11 +23,7 @@ modules:
     - mkdir -p /app/share/mime/packages/
     - install -D com.github.scrivanolabs.scrivano.mime.xml -t /app/share/mime/packages/com.github.scrivanolabs.scrivano.xml
     - install -D icons/icon.svg /app/share/icons/hicolor/scalable/apps/com.github.scrivanolabs.scrivano.svg
-    - install -D icons/scrivano_64.png /app/share/icons/hicolor/64x64/apps/com.github.scrivanolabs.scrivano.png
     - update-mime-database /app/share/mime
-    - install -D icons/scrivano_128.png /app/share/icons/hicolor/128x128/apps/com.github.scrivanolabs.scrivano.png
-    - install -D icons/scrivano_256.png /app/share/icons/hicolor/256x256/apps/com.github.scrivanolabs.scrivano.png
-    - install -D icons/scrivano_512.png /app/share/icons/hicolor/512x512/apps/com.github.scrivanolabs.scrivano.png
     sources:
     - type: archive
       url: https://github.com/scrivanolabs/ScrivanoFlatpak/releases/download/0.22.7/Scrivano_flatpak_files_0.22.7.tar.gz
