@@ -1,6 +1,6 @@
 app-id: com.github.scrivanolabs.scrivano
 runtime: org.kde.Platform
-runtime-version: '6.5'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
 command: Scrivano
 finish-args:
@@ -20,12 +20,15 @@ modules:
     - install -D libpdfium.so /app/lib/libpdfium.so
     - install -D com.github.scrivanolabs.scrivano.appdata.xml -t /app/share/metainfo
     - install -D com.github.scrivanolabs.scrivano.desktop -t /app/share/applications
+    - mkdir -p /app/share/mime/packages/
+    - install -D com.github.scrivanolabs.scrivano.mime.xml -t /app/share/mime/packages/com.github.scrivanolabs.scrivano.xml
     - install -D icons/icon.svg /app/share/icons/hicolor/scalable/apps/com.github.scrivanolabs.scrivano.svg
     - install -D icons/scrivano_64.png /app/share/icons/hicolor/64x64/apps/com.github.scrivanolabs.scrivano.png
+    - update-mime-database /app/share/mime
     - install -D icons/scrivano_128.png /app/share/icons/hicolor/128x128/apps/com.github.scrivanolabs.scrivano.png
     - install -D icons/scrivano_256.png /app/share/icons/hicolor/256x256/apps/com.github.scrivanolabs.scrivano.png
     - install -D icons/scrivano_512.png /app/share/icons/hicolor/512x512/apps/com.github.scrivanolabs.scrivano.png
     sources:
     - type: archive
-      url: https://github.com/scrivanolabs/ScrivanoFlatpak/releases/download/0.19.7/Scrivano_flatpak_files_0.19.7.tar.gz
-      sha256: e2f9473e1bd93d2c920f96126302c961b14dcfb29839e5ef9889439d717c15da
+      url: https://github.com/scrivanolabs/ScrivanoFlatpak/releases/download/0.23.2/Scrivano_flatpak_files_0.23.2.tar.gz
+      sha256: f54e1e5e05dce06c7861a64e66a4ca66c43203406f0d9502cf25ca39b5630e2a
