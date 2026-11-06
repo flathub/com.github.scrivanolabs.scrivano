@@ -1,11 +1,12 @@
 app-id: com.github.scrivanolabs.scrivano
 runtime: org.kde.Platform
-runtime-version: '6.9'
+runtime-version: '6.11'
 sdk: org.kde.Sdk
 command: Scrivano
 finish-args:
   - --share=ipc
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --filesystem=xdg-desktop
   - --filesystem=xdg-documents
   - --filesystem=xdg-download
@@ -29,5 +30,5 @@ modules:
     - install -D icons/scrivano_512.png /app/share/icons/hicolor/512x512/apps/com.github.scrivanolabs.scrivano.png
     sources:
     - type: archive
-      url: https://github.com/scrivanolabs/ScrivanoFlatpak/releases/download/0.23.7/Scrivano_flatpak_files_0.23.7.tar.gz
-      sha256: 1d59b116c499d47c482f47c10d7bdce510cfdcd1c15b6b974ecfa38e24df0886
+      url: https://github.com/scrivanolabs/ScrivanoFlatpak/releases/download/0.24.4/Scrivano_flatpak_files_0.24.4.tar.gz
+      sha256: f8950ee9f5adc780fe3850f1e1246fccf0ed04ea4411df5374aa2827813daabb
